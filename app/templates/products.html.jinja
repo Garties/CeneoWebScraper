@@ -1,0 +1,160 @@
+{% extends "base.html.jinja" %}
+{% block title %}
+Lista produktów
+{% endblock title %}
+{% block content %}
+<table id="produkty" class="table table-striped" style="width:100%">
+    <thead>
+        <tr>
+            <th>Kod produktu</th>
+            <th>Liczba zalet</th>
+            <th>Liczba wad</th>
+            <th>Liczba opinii</th>
+            <th>Średnia ocena</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="p-0">
+            <div class="position-relative p-3">
+              <a href="#" class="stretched-link"></a>
+                59772
+            </div>
+          </td>
+          <td>15</td>
+          <td>11</td>
+          <td>26</td>
+          <td>3.4</td>
+        </tr>
+        <tr>
+          <td class="p-0">
+            <div class="position-relative p-3">
+              <a href="#" class="stretched-link"></a>
+                56999
+            </div>
+          </td>
+          <td>15</td>
+          <td>15</td>
+          <td>30</td>
+          <td>3.0</td>
+      </tr>
+      <tr>
+        <td class="p-0">
+          <div class="position-relative p-3">
+            <a href="#" class="stretched-link"></a>
+              22263
+          </div>
+        </td>
+          <td>10</td>
+          <td>24</td>
+          <td>34</td>
+          <td>2.9</td>
+        </tr>
+        <tr>
+          <td class="p-0">
+            <div class="position-relative p-3">
+              <a href="#" class="stretched-link"></a>
+                19352
+            </div>
+          </td>
+          <td>12</td>
+          <td>24</td>
+          <td>36</td>
+          <td>3.3</td>
+      </tr>
+        <tr>
+          <td class="p-0">
+            <div class="position-relative p-3">
+              <a href="product" class="stretched-link"></a>
+                35414
+            </div>
+          </td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td class="p-0">
+            <div class="position-relative p-3">
+              <a href="#" class="stretched-link"></a>
+                28870
+            </div>
+          </td>
+          <td>2</td>
+          <td>23</td>
+          <td>25</td>
+          <td>1.8</td>
+      </tr>
+        <tr>
+          <td class="p-0">
+            <div class="position-relative p-3">
+              <a href="#" class="stretched-link"></a>
+                45658
+            </div>
+          </td>
+          <td>9</td>
+          <td>5</td>
+          <td>14</td>
+          <td>3.7</td>
+        </tr>
+        <tr>
+          <td class="p-0">
+            <div class="position-relative p-3">
+              <a href="#" class="stretched-link"></a>
+                72839
+            </div>
+          </td>
+          <td>19</td>
+          <td>21</td>
+          <td>40</td>
+          <td>2.9</td>
+      </tr>
+          <tr>
+            <td class="p-0">
+              <div class="position-relative p-3">
+                <a href="#" class="stretched-link"></a>
+                  15676
+              </div>
+            </td>
+          <td>23</td>
+          <td>6</td>
+          <td>29</td>
+          <td>4.4</td>
+        </tr>
+        <tr>
+          <td class="p-0">
+            <div class="position-relative p-3">
+              <a href="#" class="stretched-link"></a>
+                63180
+            </div>
+          </td>
+          <td>16</td>
+          <td>5</td>
+          <td>21</td>
+          <td>3.8</td>
+      </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+          <th>Kod produktu</th>
+          <th>Liczba zalet</th>
+          <th>Liczba wad</th>
+          <th>Liczba opinii</th>
+          <th>Średnia ocena</th>
+        </tr>
+    </tfoot>
+</table>
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+<div class="btn-group" role="group">
+<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  Pobierz plik z opiniami
+</button>
+<ul class="dropdown-menu">
+  <li><a class="dropdown-item" href="#">Pobierz plik .csv</a></li>
+  <li><a class="dropdown-item" href="#">Pobierz plik .xlsx</a></li>
+<li><a class="dropdown-item" href="#">Pobierz plik .json</a></li>
+</ul>
+</div>
+</div>
+{% endblock content %}
